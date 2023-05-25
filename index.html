@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample</title>
+    <style>
+      .form-label {
+        color: blue;
+        padding-right: 10px;
+      }
+
+      .form-section {
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+
+      .form-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-section">
+      <div class="form-row">
+        <label class="form-label">Enter your first name</label>
+        <input type="text" id="fname" />
+      </div>
+      <div class="form-row">
+        <label class="form-label">Enter your last name</label>
+        <input type="text" id="lname" />
+      </div>
+      <button onclick="submitForm()">Submit</button>
+    </div>
+
+    <script>
+      function submitForm() {
+        var firstName = document.getElementById("fname").value;
+        var lastName = document.getElementById("lname").value;
+        alert(`${firstName} ${lastName}`);
+      }
+    </script>
+  </body>
+</html>
