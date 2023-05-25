@@ -1,0 +1,19 @@
+.form-label {
+    color: blue;
+    padding-right: 10px;
+  }
+
+  .form-section {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }

@@ -5,30 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sample</title>
-    <style>
-      .form-label {
-        color: blue;
-        padding-right: 10px;
-      }
-
-      .form-section {
-        background-color: antiquewhite;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-      }
-
-      .form-row {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-bottom: 10px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="form-section">
+    <form class="form-section">
       <div class="form-row">
         <label class="form-label">Enter your first name</label>
         <input type="text" id="fname" />
@@ -38,14 +18,7 @@
         <input type="text" id="lname" />
       </div>
       <button onclick="submitForm()">Submit</button>
-    </div>
-
-    <script>
-      function submitForm() {
-        var firstName = document.getElementById("fname").value;
-        var lastName = document.getElementById("lname").value;
-        alert(`${firstName} ${lastName}`);
-      }
-    </script>
+    </form>
+    <script src="javascript.js"></script>
   </body>
 </html>
